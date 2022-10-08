@@ -1,0 +1,32 @@
+{
+  "home": {
+    "name": "Anas Awad",
+    "description": "this is a word from me ha ha ha ",
+    "imageURL": "author_image.png"
+  },
+  "about": {
+    "header": "about me aa",
+    "paragraph": "ana 5reg handasa w gamed gdn",
+    "image": "about_image.jpg"
+  },
+  "background_images": {
+    "home": "first_bg.jpg",
+    "about": "first_bg.jpg",
+    "work": "first_bg.jpg",
+    "contact": "first_bg.jpg"
+  },
+  "projects": [
+    {
+      "name": "proj 1",
+      "description": "this project is gamed awy",
+      "url": "https://bobbyhadz.com/blog/javascript-create-element-with-text",
+      "image": "first_big_item.jpg"
+    },
+    {
+      "name": "proj 2",
+      "description": "this project is gamed awy 2",
+      "url": "https://www.google.com/",
+      "image": "first_big_item.jpg"
+    }
+  ]
+}
