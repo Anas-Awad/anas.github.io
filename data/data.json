@@ -10,8 +10,8 @@
     "image": "about_image.jpg"
   },
   "background_images": {
-    "home": "p1.jpg",
-    "about": "p1.jpg",
+    "home": "p2.jpg",
+    "about": "p2.jpg",
     "work": "first_bg.jpg",
     "contact": "first_bg.jpg"
   },
