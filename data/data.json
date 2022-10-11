@@ -28,5 +28,12 @@
       "url": "https://www.google.com/",
       "image": "first_big_item.jpg"
     }
+    ,
+    {
+      "name": "bike analysis",
+      "description": "this project is about biking",
+      "url": "https://www.facebook.com/",
+      "image": "p1.jpg"
+    }
   ]
 }
