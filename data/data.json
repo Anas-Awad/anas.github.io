@@ -10,30 +10,68 @@
     "image": "about_image.jpg"
   },
   "background_images": {
-    "home": "p2.jpg",
     "about": "p2.jpg",
-    "work": "first_bg.jpg",
+    "projects": "p2.jpg",
+    "certifications": "first_bg.jpg",
     "contact": "first_bg.jpg"
   },
+  "filters": ["web screping", "web m4 screping", "data analysis"],
   "projects": [
     {
       "name": "proj 1",
       "description": "this project is gamed awy",
-      "url": "https://bobbyhadz.com/blog/javascript-create-element-with-text",
-      "image": "first_big_item.jpg"
+      "button2": "a7a",
+      "url": "https://stackoverflow.com/questions/2705583/how-to-simulate-a-click-with-javascript",
+      "url2": "https://fontawesome.com/icons/code?s=solid",
+      "image": "first_big_item.jpg",
+      "filter": "web screping"
     },
     {
       "name": "proj 2",
       "description": "this project is gamed awy 2",
       "url": "https://www.google.com/",
-      "image": "first_big_item.jpg"
-    }
-    ,
+      "button2": "",
+      "url2": "",
+      "image": "first_big_item.jpg",
+      "filter": "web m4 screping"
+    },
     {
       "name": "bike analysis",
       "description": "this project is about biking",
+      "button2": "",
       "url": "https://www.facebook.com/",
-      "image": "p1.jpg"
+      "url2": "dsd",
+      "image": "p1.jpg",
+      "filter": "data analysis"
+    },
+    {
+      "name": "bike analysis",
+      "description": "this project is about biking",
+      "button2": "",
+      "url": "https://www.facebook.com/",
+      "url2": "dsd",
+      "image": "p1.jpg",
+      "filter": "data analysis"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "proj 1",
+      "description": "this project is gamed awy",
+      "url": "https://stackoverflow.com/questions/2705583/how-to-simulate-a-click-with-javascript",
+      "image": "first_big_item.jpg"
+    },
+    {
+      "name": "proj 1",
+      "description": "this project is gamed awy",
+      "url": "https://stackoverflow.com/questions/2705583/how-to-simulate-a-click-with-javascript",
+      "image": "first_big_item.jpg"
+    },
+    {
+      "name": "proj 1",
+      "description": "this project is gamed awy",
+      "url": "https://stackoverflow.com/questions/2705583/how-to-simulate-a-click-with-javascript",
+      "image": "first_big_item.jpg"
     }
   ]
 }
