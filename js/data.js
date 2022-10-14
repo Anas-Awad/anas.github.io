@@ -7,6 +7,7 @@ window.onload = () => {
       let data = JSON.parse(this.responseText);
       setProjectsData(data);
       setHomeData(data);
+      setAboutData(data);
       setBackGrounds(data["background_images"]);
       setFilters(data["filters"]);
       filterData(data);
@@ -20,6 +21,18 @@ window.onload = () => {
     homeElement
       .querySelector("img")
       .setAttribute("src", "img/" + data["home"]["imageURL"]);
+  }
+
+  function setAboutData(data) {
+    let aboutElement = document.querySelector(".second-content");
+    aboutElement.querySelector(".left-content h2").innerText =
+      data["about"]["header"];
+    aboutElement.querySelector(".left-content p").innerText =
+      data["about"]["paragraph"];
+
+    aboutElement
+      .querySelector(".right-image img")
+      .setAttribute("src", `${"img/" + data["about"]["image"]}`);
   }
 
   function setProjectsData(data) {
@@ -124,7 +137,6 @@ window.onload = () => {
   }
 
   function setCerts(data) {
-    let el = document.querySelector(".certs");
-    console.log(el);
+    console.log(data);
   }
 };
