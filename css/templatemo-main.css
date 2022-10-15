@@ -835,6 +835,7 @@ nav a:hover::before {
 .filter {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 10px 20px;
   background-color: #343d462a;
   width: fit-content;
@@ -875,4 +876,25 @@ nav a:hover::before {
   cursor: pointer;
   color: black;
   background-color: white;
+}
+
+@media (max-width: 500px) {
+  .filter {
+    flex-direction: column;
+  }
+  .filter a {
+    font-size: 12px;
+    margin: 0 10px;
+  }
+  nav {
+    width: 20vw;
+  }
+  .ccontent {
+    width: 80vw;
+  }
+  .buttons {
+    padding: 5px 15px;
+    font-size: 10px;
+    margin: 5px 5px 0 0;
+  }
 }
