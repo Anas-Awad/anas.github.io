@@ -7,7 +7,6 @@ window.onload = () => {
       let data = JSON.parse(this.responseText);
       setProjectsData(data);
       setHomeData(data);
-      setAboutData(data);
       setBackGrounds(data["background_images"]);
       setFilters(data["filters"]);
       filterData(data);
@@ -137,6 +136,36 @@ window.onload = () => {
   }
 
   function setCerts(data) {
-    console.log(data);
+    let el = document.getElementById("certs");
+    console.log(el);
+    data.forEach((c) => {
+      let div = document.createElement("div");
+      div.innerHTML = `
+      <div class="col-md-4 col-sm-6 ">
+                <div class="item">
+                  <div class="thumb">
+                    <a
+                      data-lightbox="image-1"
+                      ><div class="hover-effect">
+                        <div class="hover-content">
+                          <h2>${c["name"]}</h2>
+                          <p style="color: white; margin-bottom: 20px">
+                            ${c["description"]}
+                          </p>
+                         <a target="_blank" class="buttons" href=${
+                           c["url"]
+                         }>View Certificate</a>
+                        </div>
+                      </div></a
+                    >
+                    <div class="image">
+                      <img src=${"img/" + c["image"]} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              `;
+      el.appendChild(div);
+    });
   }
 };
