@@ -878,6 +878,64 @@ nav a:hover::before {
   background-color: white;
 }
 
+.fifth-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contacts a {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  background-color: white;
+  margin: 25px;
+  width: 250px;
+  height: 200px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 6px 4px 4px rgb(32, 32, 32);
+}
+.contacts h2 {
+  font-size: 17px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.contacts p {
+  font-size: 15px;
+}
+.contacts i {
+  width: 55px;
+  font-size: 30px;
+  color: #2e3e60 !important;
+}
+.contacts a:hover {
+  text-decoration: none;
+  background-color: rgb(73, 73, 73);
+}
+.contacts a:hover i {
+  color: #fff !important;
+}
+.contacts a:hover h2 {
+  color: #fff !important;
+}
+.contacts a:hover p {
+  color: #fff !important;
+}
+
+.contact-content {
+  padding: 0 70px;
+}
 @media (max-width: 500px) {
   .filter {
     flex-direction: column;
@@ -889,12 +947,35 @@ nav a:hover::before {
   nav {
     width: 20vw;
   }
-  .ccontent {
+  .content {
     width: 80vw;
   }
   .buttons {
     padding: 5px 15px;
     font-size: 10px;
     margin: 5px 5px 0 0;
+  }
+}
+@media (max-width: 800px) {
+  .contacts a {
+    width: 180px;
+    height: 130px;
+  }
+  .contacts a h2 {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .contacts a p {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+  .contacts a i {
+    width: 35px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1300px) {
+  .contact-content {
+    padding: 0 0 0 0;
   }
 }
