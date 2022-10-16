@@ -557,6 +557,7 @@ nav a:hover::before {
 .fourth-content .item img {
   max-width: 100%;
   overflow: hidden;
+  height: 250px;
 }
 
 .fourth-content .item .thumb {
@@ -861,17 +862,21 @@ nav i {
   color: rgba(0, 255, 255, 0.637);
 }
 .filter .active {
-  color: rgba(0, 255, 255, 0.637);
+  color: rgba(0, 255, 255, 0.637) !important;
+}
+
+.hover-content {
+  padding: 10px 0 10px 30px !important;
 }
 
 .buttons {
-  padding: 10px 30px;
+  padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.13);
   border: 1px transparent solid;
   border-radius: 5px;
   color: white;
   margin: 20px 20px 0 0;
-  font-size: 13px;
+  font-size: 11px;
 }
 .buttons-holder {
   display: flex;
@@ -944,6 +949,37 @@ nav i {
 .contact-content {
   padding: 0 70px;
 }
+@media (max-width: 800px) {
+  .filter a:hover {
+    color: white;
+  }
+  .contacts a {
+    width: 180px;
+    height: 130px;
+  }
+  .contacts a h2 {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .contacts a p {
+    font-size: 10px;
+    line-height: 1.1;
+  }
+  .contacts a i {
+    width: 35px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1300px) {
+  .contact-content {
+    padding: 0 0 0 0;
+  }
+}
+@media (max-width: 1500px) {
+  .fifth-content {
+    align-items: unset;
+  }
+}
 @media (max-width: 500px) {
   .filter {
     flex-direction: column;
@@ -962,33 +998,5 @@ nav i {
     padding: 5px 15px;
     font-size: 10px;
     margin: 5px 5px 0 0;
-  }
-}
-@media (max-width: 800px) {
-  .contacts a {
-    width: 180px;
-    height: 130px;
-  }
-  .contacts a h2 {
-    font-size: 14px;
-    margin: 10px 0;
-  }
-  .contacts a p {
-    font-size: 12px;
-    line-height: 1.1;
-  }
-  .contacts a i {
-    width: 35px;
-    font-size: 20px;
-  }
-}
-@media (max-width: 1300px) {
-  .contact-content {
-    padding: 0 0 0 0;
-  }
-}
-@media (max-width: 1500px) {
-  .fifth-content {
-    align-items: unset;
   }
 }

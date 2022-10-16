@@ -60,7 +60,7 @@ window.onload = () => {
                          ${
                            data["projects"][i]["url2"] == ""
                              ? ""
-                             : `<a target="_blank" class="buttons" href=${data["projects"][i]["url2"]}>${data["projects"][i]["button2"]}</a>`
+                             : `<a target="_blank" class="buttons" style="margin-right:0;" href=${data["projects"][i]["url2"]}>${data["projects"][i]["button2"]}</a>`
                          }
                         </div>
                       </div></a
@@ -122,7 +122,7 @@ window.onload = () => {
             if (target.target.innerText.toLowerCase() == "all") {
               t.style.display = "block";
             } else if (
-              t.dataset.filter.replaceAll("_", " ") ==
+              t.dataset.filter.replaceAll("_", " ").toLowerCase() ==
               target.target.innerText.toLowerCase()
             ) {
               t.style.display = "block";
