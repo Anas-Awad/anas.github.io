@@ -882,6 +882,7 @@ nav a:hover::before {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  align-items: center;
 }
 .contacts {
   display: flex;
@@ -977,5 +978,10 @@ nav a:hover::before {
 @media (max-width: 1300px) {
   .contact-content {
     padding: 0 0 0 0;
+  }
+}
+@media (max-width: 1500px) {
+  .fifth-content {
+    align-items: unset;
   }
 }
