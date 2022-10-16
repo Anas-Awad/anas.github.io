@@ -832,6 +832,13 @@ nav a:hover::before {
 }
 
 /**/
+nav {
+  width: 17% !important;
+}
+nav i {
+  width: 29px !important;
+}
+
 .filter {
   display: flex;
   justify-content: center;
