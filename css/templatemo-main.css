@@ -954,15 +954,15 @@ nav i {
     color: white;
   }
   .contacts a {
-    width: 180px;
-    height: 130px;
+    width: 200px;
+    height: 145px;
   }
   .contacts a h2 {
     font-size: 14px;
     margin: 10px 0;
   }
   .contacts a p {
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1.1;
   }
   .contacts a i {
